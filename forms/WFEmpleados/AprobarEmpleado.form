@@ -1,0 +1,50 @@
+{
+    "id": "aprobarempleado",
+    "name": "AprobarEmpleado",
+    "revision": "1.0",
+    "readOnly": false,
+    "content": [
+        {
+            "id": "nombre",
+            "type": "string",
+            "label": "Nombre",
+            "readOnly": true,
+            "value": "${context.ZCAP_SEAT.nombre}",
+            "constraints": {
+                "required": false
+            }
+        },
+        {
+            "id": "apellido",
+            "type": "string",
+            "label": "Apellido",
+            "readOnly": true,
+            "value": "${context.ZCAP_SEAT.apellido01}",
+            "constraints": {
+                "required": false
+            }
+        },
+        {
+            "id": "segundo_apellido",
+            "type": "string",
+            "label": "Segundo apellido",
+            "readOnly": true,
+            "value": "${context.ZCAP_SEAT.apellido02}",
+            "constraints": {
+                "required": false
+            }
+        }
+    ],
+    "decisions": [
+        {
+            "id": "aceptar",
+            "text": "Aceptar",
+            "decisionType": "positive"
+        },
+        {
+            "id": "rechazar",
+            "text": "Rechazar",
+            "decisionType": "negative"
+        }
+    ]
+}
