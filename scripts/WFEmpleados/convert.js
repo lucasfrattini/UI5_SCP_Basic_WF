@@ -29,3 +29,10 @@ $.context.ZCAP_SEAT.input.Pernr = $.context.ZCAP_SEAT.pernr;
 $.context.ZCAP_SEAT.input.Vorna = $.context.ZCAP_SEAT.nombre;
 $.context.ZCAP_SEAT.input.Nachn = $.context.ZCAP_SEAT.apellido01;
 $.context.ZCAP_SEAT.input.Nach2 = $.context.ZCAP_SEAT.apellido02;
+
+$.context.newWF = {
+	definitionId: 'wfempleados',
+	context: {
+		nombre: "newWF"
+	}
+};
